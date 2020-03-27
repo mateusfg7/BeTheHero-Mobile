@@ -11,85 +11,21 @@
 
 <h3 align="center">
 
-_Backend da aplicação 'Be The Hero', feita na Semana OmniStack 11 da [Rocketseat](https://rocketseat.com.br/)_
+_Mobile da aplicação 'Be The Hero', feita na Semana OmniStack 11 da [Rocketseat](https://rocketseat.com.br/)_
 
 </h3>
 
 ---
 
-## Server
-### Iniciar Servidor
+> App feito com expo
+
+## Iniciar ambiente de desenvolvimento
 ```bash
 npm start
 ```
-## Database
-### Iniciar knex com o arquivo de configuração do banco de dados
-```bash
-npx knex init
-```
-### Arquivo de configuração **knexfile.js**
-```JS
-// Update with your config settings.
 
-module.exports = {
+## Screenshots
 
-  development: {
-    client: 'sqlite3',
-    connection: {
-      filename: './src/database/db.sqlite'
-    },
-    migrations: {
-      directory: './src/database/migrations'
-    },
-    useNullAsDefault: true,
-  },
-  
-  test: {
-    client: 'sqlite3',
-    connection: {
-      filename: './src/database/test.sqlite'
-    },
-    migrations: {
-      directory: './src/database/migrations'
-    },
-    useNullAsDefault: true,
-  },
+![Casos](doc/casos.jpg)
+![Detalhes](doc/detalhes.jpg)
 
-  staging: {
-    client: 'postgresql',
-    connection: {
-      database: 'my_db',
-      user:     'username',
-      password: 'password'
-    },
-    pool: {
-      min: 2,
-      max: 10
-    },
-    migrations: {
-      tableName: 'knex_migrations'
-    }
-  },
-
-  production: {
-    client: 'postgresql',
-    connection: {
-      database: 'my_db',
-      user:     'username',
-      password: 'password'
-    },
-    pool: {
-      min: 2,
-      max: 10
-    },
-    migrations: {
-      tableName: 'knex_migrations'
-    }
-  }
-
-};
-```
-### Criar Database
-```bash
-npx knex migrate:latest
-```
