@@ -77,9 +77,11 @@ export default api;
 ## Screenshots
 
 _página de listagem de casos_
+
 ![Casos](doc/casos.jpg)
 
 
 _página de detalhes de um caso_
+
 ![Detalhes](doc/detalhes.jpg)
 
