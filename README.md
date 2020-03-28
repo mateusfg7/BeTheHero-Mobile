@@ -73,15 +73,13 @@ const api = axios.create({
 export default api;
 ```
 
-<h3 align="center">
 
 ## Screenshots
 
 > _página de listagem de casos_
-![Casos](doc/casos.jpg)
+> ![Casos](doc/casos.jpg)
 
 
 > _página de detalhes de um caso_
-![Detalhes](doc/detalhes.jpg)
+> ![Detalhes](doc/detalhes.jpg)
 
-</h3>
